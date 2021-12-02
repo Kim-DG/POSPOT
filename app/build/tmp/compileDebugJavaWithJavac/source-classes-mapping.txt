@@ -29,7 +29,7 @@ org/tensorflow/codelabs/objectdetection/databinding/ActivitySpotResultDetailBind
  org.tensorflow.codelabs.objectdetection.databinding.ActivitySpotResultDetailBinding
 org/tensorflow/codelabs/objectdetection/databinding/ActivitySpotManualBinding.java
  org.tensorflow.codelabs.objectdetection.databinding.ActivitySpotManualBinding
-org/tensorflow/codelabs/objectdetection/databinding/ActivityMainBinding.java
- org.tensorflow.codelabs.objectdetection.databinding.ActivityMainBinding
 org/tensorflow/codelabs/objectdetection/databinding/ActivitySplashBinding.java
  org.tensorflow.codelabs.objectdetection.databinding.ActivitySplashBinding
+org/tensorflow/codelabs/objectdetection/databinding/ActivityMainBinding.java
+ org.tensorflow.codelabs.objectdetection.databinding.ActivityMainBinding
