@@ -4,7 +4,9 @@ package org.tensorflow.codelabs.objectdetection.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -20,12 +22,25 @@ public final class ActivitySpotResultDetailBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageView img;
+  public final TextView address;
+
+  @NonNull
+  public final Button btnLink;
+
+  @NonNull
+  public final ImageView imageview;
+
+  @NonNull
+  public final TextView name;
 
   private ActivitySpotResultDetailBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ImageView img) {
+      @NonNull TextView address, @NonNull Button btnLink, @NonNull ImageView imageview,
+      @NonNull TextView name) {
     this.rootView = rootView;
-    this.img = img;
+    this.address = address;
+    this.btnLink = btnLink;
+    this.imageview = imageview;
+    this.name = name;
   }
 
   @Override
@@ -55,13 +70,32 @@ public final class ActivitySpotResultDetailBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.img;
-      ImageView img = ViewBindings.findChildViewById(rootView, id);
-      if (img == null) {
+      id = R.id.address;
+      TextView address = ViewBindings.findChildViewById(rootView, id);
+      if (address == null) {
         break missingId;
       }
 
-      return new ActivitySpotResultDetailBinding((ConstraintLayout) rootView, img);
+      id = R.id.btn_link;
+      Button btnLink = ViewBindings.findChildViewById(rootView, id);
+      if (btnLink == null) {
+        break missingId;
+      }
+
+      id = R.id.imageview;
+      ImageView imageview = ViewBindings.findChildViewById(rootView, id);
+      if (imageview == null) {
+        break missingId;
+      }
+
+      id = R.id.name;
+      TextView name = ViewBindings.findChildViewById(rootView, id);
+      if (name == null) {
+        break missingId;
+      }
+
+      return new ActivitySpotResultDetailBinding((ConstraintLayout) rootView, address, btnLink,
+          imageview, name);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
