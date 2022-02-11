@@ -20,3 +20,10 @@
 <br/>
 
 ## Library
+
+#### [• Exifinterface](https://developer.android.com/jetpack/androidx/releases/exifinterface?hl=ko)
+#### [• Tensorflow-lite](https://www.tensorflow.org/lite/guide/android)
+#### [• CameraX](https://developer.android.com/jetpack/androidx/releases/camera?hl=ko)
+#### [• Glide](https://github.com/bumptech/glide)
+#### [• Coroutine](https://developer.android.com/kotlin/coroutines?hl=ko)
+
